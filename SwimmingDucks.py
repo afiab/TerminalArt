@@ -2,8 +2,6 @@ import os
 import time
 import sys
 
-counter = 0
-
 A="   _      _      _   "
 B=" >(.)__ <(.)__ =(.)__"
 C="  (___/  (___/  (___/"
@@ -24,7 +22,7 @@ while True:
     # Clear terminal
     os.system('cls' if os.name == 'nt' else 'clear')
     
-    # Print counter
+    # Print Ducks
     print(A,B,C,D,sep="\n");
     A=rotate1(A)
     B=rotate1(B)
@@ -33,9 +31,6 @@ while True:
     
     # Flush the output buffer to ensure it is printed immediately
     sys.stdout.flush()
-    
-    # Increment counter
-    counter += 1
     
     # Wait for a second (optional)
     time.sleep(1)
